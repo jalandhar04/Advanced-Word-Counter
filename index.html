@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Word Counter Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="acw">Advanced Word Counter Tool</h2>
+        <textarea placeholder="Paste Contents Here or click the Paste button to see the magic of Word Counter"
+            id="word-counter-textarea" rows="7" cols="50" oninput="updateMetrics()"></textarea>
+        <button id="clear-button" onclick="clearTextArea()">Clear</button>
+        <div class="metric-row">
+            <div class="metric-box">
+                <p id="word-count">Word Count: 0</p>
+            </div>
+            <div class="metric-box">
+                <p id="character-count-with-space">Character Count (with space): 0</p>
+            </div>
+            <div class="metric-box">
+                <p id="character-count-without-space">Character Count (without space): 0</p>
+            </div>
+        </div>
+        <div class="metric-row">
+            <div class="metric-box">
+                <p id="paragraph-count">Paragraph Count: 0</p>
+            </div>
+            <div class="metric-box">
+                <p id="sentence-count">Sentence Count: 0</p>
+            </div>
+            <div class="metric-box">
+                <p id="estimated-reading-time">Estimated Reading Time: 0 minute</p>
+            </div>
+        </div>
+    </div>
+    <script src="function.js"></script>
+</body>
+
+</html>
