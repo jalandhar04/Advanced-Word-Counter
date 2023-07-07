@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200x;
+    margin: 0 20px;
+}
+
+#word-counter-textarea {
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+#clear-button {
+    font-size: 18px;
+    background-color: #000000;
+    color: #ffff;
+    padding: 8px 16px;
+    margin: 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+#clear-button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.metric-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.metric-box {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.metric-box p {
+    margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .metric-box {
+        flex-basis: 100%;
+    }
+}
